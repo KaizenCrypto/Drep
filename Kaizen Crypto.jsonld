@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Kaizen Crypto"
+    },
+    "motivations": {
+      "@value": "Being a Drep is the tool we have to voice our reason within the Cardano ecosystem. I have participated in the growth of Cardano since 2017 and have built a media platform, stakepool service, and met many community members in person. \nGovernance is a new challenge and I feel excited for the journey. I will work in the best interest of all delegators and keep Cardano as the top priority. "
+    },
+    "objectives": {
+      "@value": "Cardano is an open platform for everyone to participate. As more people come onboard, the more important the network becomes. I've been apart of the community since the early days, and this is my next step in being of service to others in the ecosystem. \nAs your Drep, I am committed to achieving the best outcomes for everyone, even if it means defying popular belief when necessary. Our aim is to foster the growth of Cardano and spread adoption. "
+    },
+    "paymentAddress": {
+      "@value": "addr1q90ntcqsdldu55cgpmytp0tw8ae7zzgutt76gpfmy650tnma66z9medzauv7x8cfknfv9ax3cufzw5rfnntznm6032mq2e8d96"
+    },
+    "qualifications": {
+      "@value": "I love Cardano\nCardano Content Creator\nSPO since Cardano ITN\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Website"
+        },
+        "uri": {
+          "@value": "https://kaizencrypto.com/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/KaizenCrypto"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Youtube"
+        },
+        "uri": {
+          "@value": "https://www.youtube.com/kaizencrypto"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Youtube"
+        },
+        "uri": {
+          "@value": "https://www.youtube.com/kaizencrypto"
+        }
+      }
+    ]
+  }
+}
